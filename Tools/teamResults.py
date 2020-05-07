@@ -27,7 +27,7 @@ for year in range(1996, 2019):
         next_yr = '0' + str(next_yr)
 
     url = 'https://stats.nba.com/teams/traditional/?sort=TEAM_NAME&dir=1&Season=' + str(year) + '-' + str(next_yr) + \
-          '&SeasonType=Regular%20Season'
+          '&SeasonType=Regular%20Season&PerMode=PerMinute'
     page = parse(url)
 
     # Store the contents of the website under doc
