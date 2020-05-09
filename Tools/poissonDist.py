@@ -3,6 +3,8 @@ import sys, getopt
 import numpy
 
 # When passing in command line arguments, must have in the format of 'Golden State Warriors' to ignore whitespace
+# Also, must run script from the Tools folder for the relative file pathing to work correctly. If ran from
+# parent folder, use './Data/PerMinuteStats.csv' instead
 
 def main(argv):
     game_minutes = 48
